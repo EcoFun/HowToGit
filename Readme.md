@@ -1,11 +1,18 @@
 Getting Started
 ============
 
+Download and install git
+-----------
+The sources are on https://git-scm.com/downloads
+
+Just follow the instructions for installation
+
+
 Welcome on the GIT
 -----------
 
 Once you been to the github website, downloaded it and made yourself an account, 
-you should watch a 15 min video to get a class on the basic commands
+you can watch a 15 min video to get a class on the basic commands
 This is just one example! http://www.youtube.com/watch?v=LXoWxrTdXkM
 
 It even offers a online version of the GIT prompt window:
@@ -16,29 +23,35 @@ this tutorial is super easy to follow along with.
 
 Resources
 ------------
+Here is an inetresting website (in French) but probably with a limited number pages you can read a day):
+https://openclassrooms.com/courses/gerez-vos-codes-source-avec-git
+
 This book is free and can be downloaded from the site below. 
 http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 
+**See below for the basics**
+
+__________
+
+Basics: Initialize a git project
 =============
 
-# git: initialize a git project
+## I) Initialize the git repo locally (i.e. on your PC)
 
-## 0) Download and install git
-The sources are [here](https://git-scm.com/downloads) <p>
-Just follow the instructions for installation
-
-## I) Initialize the git repo locally (i.e. on your laptop)
 ### I.1) Create a new repository on github
-Push the `new repository` button on [EcoFun git](https://github.com/EcoFun).<p>
+Push the `new repository` button on [EcoFun git](https://github.com/EcoFun).
+
 Give a name to the repo. See few example on the [EcoFun git](https://github.com/EcoFun).
 
-For example, `my_repo`.
+Here let's call it `my_repo`.
 
-### I.2) Initialize git
-On you PC,create the folder of your repository. For instance, let's call it `my_repo.git`.
+### I.2) Initialize the git repo on your PC
+Create the folder for your repository and give it a relevant name. Here, let's call it `my_repo.git`.
 
 Go within that folder, then type:<p>
-`git init`
+```git
+git init
+```
 
 ### I.3) Add the Adress of the remote server where the project is
 `git remote add <remote_name> <ssh of remote project adress>`
