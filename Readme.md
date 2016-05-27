@@ -107,7 +107,7 @@ With our example:
 
 Then do modify whatever you want!
 
-### II.2) list your modified file to a database
+### II.2) Add your modified file to a database
 ```git add . --all```
 
 ### II.3) commit the changes
@@ -117,7 +117,7 @@ git commit -m "a message describing the changes here
  - it's a good habit to properly describe changes"
 ```
 
-To add file and commit simultaneously (note: does not include newly created file contrary to `git add . --all`):<p>
+To add file and commit simultaneously (note: does not include newly created file contrary to `git add . --all`)<p>
 ```git commit -am "my message"```
 
 ### II.4) finally push the change onto the remote
