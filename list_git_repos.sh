@@ -20,4 +20,4 @@ elif [ $# -gt 1 ]; then
     exit
 fi
 
-find $1 -type d -name "*.git" -exec dirname {} \; 
+find $1 -type d -name ".git" -exec dirname {} \; 
