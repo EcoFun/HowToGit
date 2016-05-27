@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+    # dependencies: git
 usage="
 SYNOPSIS:
     $(basename "$0") list_git_repo
