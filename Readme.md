@@ -49,16 +49,20 @@ Here let's call it `my_repo`.
 Create the folder for your repository and give it a relevant name. Here, let's call it `my_repo.git`.
 
 Go within that folder, then type:<p>
-```git
+```
 git init
 ```
 
-### I.3) Add the Adress of the remote server where the project is
-`git remote add <remote_name> <ssh of remote project adress>`
+### I.3) Add the adress of the remote server(s)
+Here the idea is to say GIT where it should transfer your project (i.e. where the project is remotely saved).
+```
+git remote add <remote_name> <ssh of remote project adress>
+```
 
-you can have several remotes (e.g. one on github, one a local server, one on any other server). The first remote (<remote_name>) is usually called `origin` but there is no obligation and if you prefer, you can call it with a name that is more relevant to you (e.g. `github`, `ecofun`, `my_remote_server` etc.)
+you can have several remotes (e.g. one on github, one a local server, one on any other server). The first remote is usually called `origin` but there is no obligation and if you prefer, you can call it with a name that is more relevant to you (e.g. `github`, `ecofun`, `my_remote_server` etc.).
+For each repo, I personnaly call the EcoFun github `ecofun` and my personal github `github`. If you want, you can have saves on several servers (good for backups).
 
-for example:
+Few example:
 
 - `git: remote add github git@github.com:EcoFun/mon_projet_a_la_noix.git`	# note the ssh adress
 - `git remote add ecofun git@github.com:EcoFun/seq2ali.git`
@@ -67,55 +71,67 @@ for example:
 Note the ssh adresses and the presence of the `.git` suffix.
 
 ### I.4) Create your initial commit
-**WARNING**: first thing first, don't forget to create your initial commit!
+**WARNING**: first thing first, don't forget to create your initial commit locally.
 
-`git add . --all`
-`git commit -m "Initialization commit"`
+```
+git add . --all
+git commit -m "Initialization commit"
+```
 
-### I.5) Pull the repo a first time from the remote (you need to specify the branch as well)
-`git pull <remote_name> <branch>`
+### I.5) Synchronize local and remote repo
+When you initialize the Github repo, you may have created different files (a readme.md, a licence file...). In this case, it's goo to synchronize both repo before anything else.
 
-If you use `ecofun` for <remote_name>: <p>
-`git pull ecofun master`
+Pull the remote repo a first time f(you may need to specify the branch as well).
+Generic command:
+```git pull <remote_name> <branch>```
+
+For our `ecofun` repo : <p>
+```git pull ecofun master```
 
 Note that the first branch is always  `master`.
 
 ### I.6) Set the default remote
-`git branch --set-upstream-to <remote>/<branch>`
+As I said, you may have several remote, but have a preferred one and the othe rjust for backup once in a while. In this case, let's just set up the default remote:
 
-`git branch --set-upstream-to ecofun/master`
+```git branch --set-upstream-to <remote>/<branch>```
+
+With our example:
+```git branch --set-upstream-to ecofun/master```
 
 ---
 
-## II) Start modifications locally then push your changes onto the remote server
+## II) Work locally and push modifications to remote repo
 
-### II.1) make any change you want to any file
-**IMPORTANT**: always think to `pull` from the remote before doing modification in case someone else made some changes to the project!
+### II.1) Modify your code locally
+**IMPORTANT**: Before to start modifying your code locally, it's good practice to always `pull` the remote just in case someone else made changes to the project!
+
+Then do modify whatever you want!
 
 ### II.2) list your modified file to a database
-`git add . --all`
+```git add . --all```
 
 ### II.3) commit the changes
-`git commit -m "a message describing the changes here
-
+```
+git commit -m "a message describing the changes here
  - can be on several lines
- - it's a good habit to properly describe changes"`
+ - it's a good habit to properly describe changes"
+```
 
-To add file and commit simultaneously (note: does not include newly created file):<p>
-`git commit -am "my message"`
+To add file and commit simultaneously (note: does not include newly created file contrary to `git add . --all`):<p>
+```git commit -am "my message"```
 
 ### II.4) finally push the change onto the remote
 The basic command is:<p>
-`git push <remote> <branch>`
+```git push <remote> <branch>```
 
 The initial branch is always `master`, so basically:<p>
-`git push github master`
+```git push github master```
 
-Now you can shorten this command line. The first time, you have to define the default remote server (as I said you may have several):<p>
-`git push --set-upstream origin master`
+Now you can shorten this command line. The first time, you have to define the default remote server (as I said you may have several - see I.6):<p>
+```git push --set-upstream origin master```
 
 Then after you just need to do type:<p>
-`git push`
+```git push```
 
 ---
 
