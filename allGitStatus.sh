@@ -28,7 +28,7 @@ fi
 
 
 while read l; do 
-    echo "### Check Git staus of $l"
+    echo "### Check Git status of $l"
     cd $l
     git status
     echo ""
