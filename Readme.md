@@ -100,6 +100,22 @@ With our example:
 
 ---
 
+Note: at that point, you have not yet send any data on github, so that ecofun/master does not exist if you haven't set either a `.gitignore` or a licence file.
+In this case you will meet the following erro:
+```
+$ git branch --set-upstream-to github/master
+error: the requested upstream branch 'github/master' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+```
+If so, just define the default branch after your first push (see II.4).
+
 ## II) Work locally and push modifications to remote repo
 
 ### II.1) Modify your code locally
