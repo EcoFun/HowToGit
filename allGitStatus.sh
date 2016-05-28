@@ -28,8 +28,8 @@ fi
 
 
 while read l; do 
-    echo "### Check Git status of $l"
     l=${l%*.git}
+    echo "### Check Git status of $l"
     cd $l
     git status
     echo ""
