@@ -4,9 +4,8 @@
 alias locagit="locate */.git|grep --color=never -e '<my_folder_1>' -e '<my_folder_i>'..."
 ```
 SYNOPSIS:
-- Where `my_folder_i` are the base names of the folders where you know you have git repositories of interest 
-(I do it that way in order to not listing git repo of the system).
-- pass as many `-e '<my_folder_1>'` arguemnts as you have folders of interest
+- Where `my_folder_i` are the base names of the folders where you know you have git repositories of interest (the git repo can be subdirectories of course). I do it that way in order to not listing git repo of the system.
+- pass as many `-e '<my_folder_1>'` arguments as you have folders with git repo of interests that are not nested in each others.
 
 e.g.:
 ```sh
