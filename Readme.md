@@ -80,7 +80,7 @@ git commit -m "Initialization commit"
 
 ### [ I.4.5) Send your ssh public key to github ]
 If it's the first time your use `git` on a computer (i.e. you need to redo it for any new computer), you will need to 'register' your computer on github.<p>
-It's not really registering but you need to specify your ssh **public** key to the server (_**nerver send your private key anywahere!!!!**_). It's not an obligation but it is very useful in order to not be asked your password each time you send or retrieve info to github!!!<p>
+It's not really registering but you need to specify your ssh **public** key to the server (_**WARNING: never send your private key anywhere!!!!**_). It's not an obligation but it is very useful in order to not be asked your password each time you send or retrieve info to github!!!<p>
 A different procedure exists if you want to use thet github https adress of your github repo, but in this case you will have to specify your password each time you `git push` or `git pull`.
 
 The procedure for Linux users is described [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key)
