@@ -80,18 +80,14 @@ git commit -m "Initialization commit"
 
 ### [ I.4.5) Send your ssh public key to github ]
 If it's the first time your use `git` on a computer (i.e. you need to redo it for any new computer), you will need to 'register' your computer on github.<p>
-It's not really registering but you need to specify your ssh **public** key to the server. It's not an obligation but it is very useful in order to not be asked your password each time you send or retrieve info to github!!!<p>
+It's not really registering but you need to specify your ssh **public** key to the server (_**nerver send your private key anywahere!!!!**_). It's not an obligation but it is very useful in order to not be asked your password each time you send or retrieve info to github!!!<p>
 A different procedure exists if you want to use thet github https adress of your github repo, but in this case you will have to specify your password each time you `git push` or `git pull`.
 
-The procedure for Linux users is described here: 
-https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key
+The procedure for Linux users is described [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key)
 
-Alternatively, you can generate your ssh keys just locally and specify it to github on this page: 
-https://github.com/settings/ssh
-(push the 'New SSH key' button).
+Alternatively, you can generate your ssh keys just locally and specify it to github on this [page](https://github.com/settings/ssh) (push the 'New SSH key' button).
 
-More info on ssh keys here (French doc): 
-https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux/la-connexion-securisee-a-distance-avec-ssh
+More info on ssh keys [here](https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux/la-connexion-securisee-a-distance-avec-ssh) (French doc).
 
 For Windows users, I don't know how to do that, so please dig the doc...
 
