@@ -9,6 +9,6 @@ SYNOPSIS:
 - pass as many `-e '<my_folder_1>'` arguemnts as you have folders of interest
 
 e.g.:
-```
+```sh
 alias locagit="locate */.git|grep --color=never -e '06_Projects_experiments' -e '0.1_LudoLibraries'"
 ```
