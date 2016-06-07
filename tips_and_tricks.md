@@ -1,4 +1,4 @@
-#### find all your git repo locally
+#### I) find all your git repo locally
 ##### add the following alias to your `.bash_aliases` file (creates it if needed)
 ```sh
 alias locagit="locate */.git|grep --color=never -e '<my_folder_1>' -e '<my_folder_i>'..."
