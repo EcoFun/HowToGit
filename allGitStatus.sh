@@ -29,8 +29,8 @@ fi
 
 while read l; do 
     l=${l%*.git}
-    echo "### Check Git status of $l"
+    echo "### Check Git status of '$l'"
     cd $l
-    git status
+    git status -s
     echo ""
 done < $1
