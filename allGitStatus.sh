@@ -5,10 +5,11 @@ SYNOPSIS:
     $(basename "$0") list_git_repo
 
 DESCRIPTION
-    Recursively display the git status of a list of git repositories
+    Check the git status of a list of git repositories provided by the file
+    'list_git_repo'.
 
 ARGUMENTS:
-    list_git_repo           text file listing teh path of th egit repo to
+    list_git_repo           text file listing the path of the git repo to
                             be checked"
 
 
@@ -29,8 +30,9 @@ fi
 
 while read l; do 
     l=${l%*.git}
-    echo "### Check Git status of '$l'"
+    echo "#### Check git status of '$l' ####"
     cd $l
     git status -s
+    echo ""
     echo ""
 done < $1
